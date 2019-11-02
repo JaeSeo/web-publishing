@@ -1,0 +1,39 @@
+.whole {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    width: 165px;
+    height: 58px;
+    margin-top: 80px;
+}
+
+.menu {
+    font-family: Helvetica;
+    color: 58595B;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#seoul {
+    margin-left: 20px;
+}
+
+#tokyo {
+    margin-left: 20px;
+}
+
+#paris {
+    margin-left: 20px;
+}    
+
+#picture {
+    width: 90%;
+}

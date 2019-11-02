@@ -1,0 +1,6 @@
+img 태그는 inline으로 나오지만, 사실 replaced element라는 특수한 inline 요소이다.
+=> 글자처럼 인식됨.
+
+img태그 가운데 정렬 방법
+1. 상위요소 text-align: center;
+2. display: block; margin-left: auto; margin-right: auto;

@@ -1,0 +1,243 @@
+<!-- 재능 공유 사이트
+
+
+재능 공유 사이트 'ShareSkill'을 만들어보려고 합니다.
+
+부트스트랩
+이 과제에서는 몇 가지 부트스트랩 컴포넌트를 사용해야 하는데요. 사용 방법은 여러분이 설명서를 읽고 직접 알아내보세요. 앞으로 프로그래밍을 하다 보면 직접 영문 문서를 읽고 알아내야 하는 경우가 많습니다. 영어 문서를 읽는 게 부담스러워도 한 번 꼭 도전해보시길 바랍니다!
+
+네비게이션 바
+캐러셀
+경보
+그리드
+Hero Header
+네비게이션 바 바로 밑에 있는 캐러셀의 높이는 400px입니다. 각 슬라이드의 배경 이미지는 다르고, background-position도 각각 다릅니다.
+
+음악 이미지는 왼쪽 가운데
+메이크업 이미지는 가운데 위
+요리 이미지는 가운데 가운데
+수업 목록
+현재 8개의 수업 카드가 나와 있는데, 모두 <a href="#">로 설정해주세요. -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ShareSkill</title>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<!--navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">SHARESKILL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">튜터 신청</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">수업 목록</a>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">회원가입</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">로그인</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+
+<!--hero_header-->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 400px;">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active guitar">
+        <div class="content">
+            <div class="content1">음악 배워보세요</div>
+            <div class="content2">멋진 뮤지션들이 주변에 있습니다.</div>
+            <div class="content3">수업 찾기</div>
+        </div>
+        </div>
+        <div class="carousel-item makeup">
+        <div class="content">
+            <div class="content1">음악 배워보세요</div>
+            <div class="content2">멋진 뮤지션들이 주변에 있습니다.</div>
+            <div class="content3">수업 찾기</div>
+        </div>
+        </div>
+        <div class="carousel-item cooking">
+        <div class="content">
+            <div class="content1">음악 배워보세요</div>
+            <div class="content2">멋진 뮤지션들이 주변에 있습니다.</div>
+            <div class="content3">수업 찾기</div>
+        </div>
+        </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+    
+<!--alert-->
+
+    <div class="container">
+    <div class="alert alert-warning" role="alert">
+        튜터 모집! 재능을 나누어봐요.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    </div>
+    
+<!--grid-->
+
+    <div class="container">
+    <div class="row first_row">
+        <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12 first"> -->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course1.jpg" class="image">
+            <div class="desc">
+                <p class="title">개성 있는 일러스트 작품 만들기</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">문종모</span>
+                </div>
+            </div>
+            </div>
+        </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course2.jpg" class="image">
+            <div class="desc">
+                <p class="title">내가 만드는 나만의 악세서리</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">하지은</span>
+                </div>
+            </div>        
+            </div>
+        </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course3.jpg" class="image">
+            <div class="desc">
+                <p class="title">내 이야기를 노래로!</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">김신의</span>
+                </div>
+            </div>        
+            </div>
+        </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course4.jpg" class="image">
+            <div class="desc">
+                <p class="title">비전공자를 위한 웹 프로그래밍</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">손동욱</span>
+                </div>
+            </div>        
+            </div>
+        </a>  
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course5.jpg" class="image">
+            <div class="desc">
+                <p class="title">자신감 업! 메이크업 클래스</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">강귀영</span>
+                </div>
+            </div>        
+            </div>
+        </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course6.jpg" class="image">
+            <div class="desc">
+                <p class="title">아이돌 댄스 정복하기</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">박윤석</span>
+                </div>
+            </div>        
+            </div>
+        </a>  
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course7.jpg" class="image">
+            <div class="desc">
+                <p class="title">사진 작가에게 배우는 야외 사진</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">이윤수</span>
+                </div>
+            </div>        
+            </div>
+        </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 first">
+        <a href="#">
+            <div class="group">
+            <img src="images/course8.jpg" class="image">
+            <div class="desc">
+                <p class="title">기본부터 익히는 플라워 클래스</p>
+                <div class="user_desc">
+                <img src="images/user.png" class="user"><span class="user_name">서혜린</span>
+                </div>
+            </div>        
+            </div>
+        </a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+<!-- feedback -->
+<!-- Kim Youngjun2019.05.20 14:110
+재현님, 어려운 과제인데도 많이 구현해주셨네요 ^^ 잘하셨습니다^^ 그런데 브라우저 사이즈가 작아질 시 메뉴의 드롭다운이 정확히 이뤄지지 않고 있습니다.
+
+
+Kim Youngjun2019.05.20 14:140
+그리고 레이아웃이 살짝 깨지게 되는데 col 값을 어떤걸 주면 좋을지 좀 더 생각해보시면 좋겠습니다:)
+
+
+Kim Youngjun2019.05.20 14:140
+천천히 한번 생각해보시고 수정 후 제출 부탁드려요:) -->
+<!-- 수정함. -->
