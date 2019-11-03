@@ -1,0 +1,223 @@
+1분 안에 웹사이트 런칭하기!
+과연 이 코드는 어떤 페이지가 될까요? 한번 직접 확인해보세요!
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+        @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+        * {
+          box-sizing: border-box;
+        }
+        img {
+          width: 50%;
+          border-radius: 50%;
+          border: 3px solid white;
+          transform: scale(1.6);
+          position: relative;
+          float: right;
+          right: -15%;
+        }
+         h2, p {
+          margin: 0;
+          text-align: left;
+          padding: 10px 0;
+          width: 100%;
+        }
+         h2 {
+          font-size: 1.3em;
+          font-weight: 300;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        p {
+          font-size: 0.9em;
+        }
+        i {
+          line-height: 40px;
+          font-size: 24px;
+          padding: 5px;
+          color: #000000;
+        }
+        a {
+          opacity: 0.3;
+          text-decoration: none;
+        }
+        .container {
+          font-family: 'Raleway', Arial, sans-serif;
+          position: relative;
+          float: left;
+          overflow: hidden;
+          max-width: 480px;
+        }
+         .caption {
+          padding: 20px 30px 20px 20px;
+          position: absolute;
+          left: 0;
+          width: 50%;
+        }
+         .bottom {
+          padding: 15px 30px;
+          font-size: 0.9em;
+          color: #ffffff;
+          clear: both;
+          background: #20638f;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container blue">
+    <div class="caption">
+      <h2>THE <b>1975</b></h2>
+      <p>The 1975 are an English rock band originating from Manchester.</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="ion-social-instagram-outline"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a>
+      </div>
+    </div>
+    <img src="https://i.imgur.com/JZjQwYS.jpg"/>
+    <div class="bottom">Alternative Rock Band</div>
+  </div>
+
+</body>
+</html>
+0. 시작하기 전에..
+코딩을 하려면 설치 과정이 필요합니다.
+HTML, JavaScript 같은 웹 관련 언어들은 그 과정이 비교적 쉬운 편이지만, 처음 하시는 분에게는 이것도 헷갈릴 수 있습니다.
+1초라도 코딩을 빨리 시작해보려면 이미 온라인에 구축된 시스템을 활용하면 됩니다.
+
+repl.it, Codenvy, Cloud9 등은 별도의 프로그램을 설치하지 않고도 바로 프로그래밍을 시작할 수 있게 해주는 서비스입니다.
+(만약 이런 서비스의 도움을 빌리지 않고 바로 내 컴퓨터에서 코딩을 하실 분들은 이 노트는 우선 넘어가셔도 됩니다.)
+
+이 중 어느 것을 사용해도 되지만, repl.it을 사용해보도록 하겠습니다.
+
+회원 가입 > 프로젝트 생성 > 코딩 순서로 진행하면 됩니다.
+
+1. 회원가입
+1.1> 웹 브라우저에서 repl.it로 들어간 후, "Sign up"을 누르세요.
+
+
+
+1.2> 빈 칸을 채우고 "Sign up"을 누르면 회원 가입이 완료됩니다. 구글, 깃허브, 페이스북 아이디를 사용할 수도 있습니다.
+
+2. 프로젝트 만들기
+2.1> "Start Coding Now" 라는 버튼이 보이죠? 눌러주세요!
+
+
+
+2.2> 언어를 골라주면 바로 코딩 창으로 넘어갑니다. HTML, CSS, JS를 골라줍니다.
+
+
+
+2.3> 우리가 만든 사이트 주소가 바로 주어지네요. 이제 친구들에게도 사이트를 보여줄 수 있습니다. 이해했으니 "Got It"을 눌러줍시다.
+
+
+
+3. 코딩하기
+3.1> 자 이제 코딩을 해봅시다. 왼쪽에 index.html, index.css, index.js 3개의 파일이 생기는데, 지금은 index.html 파일 하나만 작성해주시면 됩니다. 원래 있던 코드를 지우고 아래 코드를 붙여넣기 해보세요!
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+        @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+        * {
+          box-sizing: border-box;
+        }
+        img {
+          width: 50%;
+          border-radius: 50%;
+          border: 3px solid white;
+          transform: scale(1.6);
+          position: relative;
+          float: right;
+          right: -15%;
+        }
+         h2, p {
+          margin: 0;
+          text-align: left;
+          padding: 10px 0;
+          width: 100%;
+        }
+         h2 {
+          font-size: 1.3em;
+          font-weight: 300;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        p {
+          font-size: 0.9em;
+        }
+        i {
+          line-height: 40px;
+          font-size: 24px;
+          padding: 5px;
+          color: #000000;
+        }
+        a {
+          opacity: 0.3;
+          text-decoration: none;
+        }
+        .container {
+          font-family: 'Raleway', Arial, sans-serif;
+          position: relative;
+          float: left;
+          overflow: hidden;
+          max-width: 480px;
+        }
+         .caption {
+          padding: 20px 30px 20px 20px;
+          position: absolute;
+          left: 0;
+          width: 50%;
+        }
+         .bottom {
+          padding: 15px 30px;
+          font-size: 0.9em;
+          color: #ffffff;
+          clear: both;
+          background: #20638f;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container blue">
+    <div class="caption">
+      <h2>THE <b>1975</b></h2>
+      <p>The 1975 are an English rock band originating from Manchester.</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="ion-social-instagram-outline"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a>
+      </div>
+    </div>
+    <img src="https://i.imgur.com/JZjQwYS.jpg"/>
+    <div class="bottom">Alternative Rock Band</div>
+  </div>
+
+</body>
+</html>
+
+
+3.2> run 버튼을 눌러주면 코드의 결과가 오른쪽 창에 나옵니다. 결과는 직접 한번 확인해보세요!
+
+
+
+3.3> 이 코드를 저장해두려면, 연필 아이콘을 누르고 이름을 적어주시면 됩니다.
+
+
+
+3.4> 코딩을 더 하고싶으면 어떻게 해야할까요? 왼쪽 위의 repl.it 로고를 누르면 프로젝트들을 모아서 볼 수 있습니다.
+
+
+
+3.5> 여기에서 오른쪽 밑에 있는 + 버튼을 누르면 다시 프로젝트를 생성할 수 있습니다.
+
+
+
+3.6> 이제 얼마든지 새로운 프로젝트를 만들어서 코딩할 수 있겠죠? 1분 만에 끝내신 분 있으신가요?! 사이트를 친구에게 자랑해봅시다!
